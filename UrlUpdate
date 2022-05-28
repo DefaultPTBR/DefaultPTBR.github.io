@@ -1,5 +1,5 @@
 {
-  "Version": "1.0.2",
+  "Version": "1.0.3",
   "ReleaseNotes": "",
   "UrlUpdate": "https://DefaultPTBR.github.io/UrlUpdate",
   "Sms": "https://DefaultPTBR.github.io/UrlSms",
@@ -7,13 +7,13 @@
   "UrlContato": "https://wa.me/message/TBLR6OUAAXH7H1",
   "UrlTermos": "",
   "CheckUser": "true",
-  "UdpPort": "7300,7500;7295;7296;7200;7297;7298;7299;7400",
+  "UdpPort": "7300",
   "Servers": [
     {
       "Name": "Servidor Brasileiro",
       "TYPE": "premium",
       "FLAG": "br.png",
-      "ServerIP": "br27.fast4g.xyz",
+      "ServerIP": "br28.fast4g.xyz",
       "CheckUser": "",
       "ServerPort": "22",
       "SSLPort": "443",

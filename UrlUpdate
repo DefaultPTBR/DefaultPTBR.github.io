@@ -149,7 +149,7 @@
    "SNI": "boom4u.com.br",
    "TlsIP": "boom4u.com.br",
    "ProxyIP": "",
-   "ProxyPort": "443",
+   "ProxyPort": "",
    "Info": "Tlsws"
   }, 
 {

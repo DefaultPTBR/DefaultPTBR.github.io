@@ -118,8 +118,8 @@
  "Payload": "GET sni://cdnjs.cloudflare.com HTTP/1.1[crlf]Host: br28.fast4g.xyz[crlf]X-Forward-Host:  [crlf]upgrade: websocket[crlf][lf]",
  "SNI": "cdnjs.cloudflare.com",
  "TlsIP": "",
- "ProxyIP": "cdnjs.cloudflare.com",
- "ProxyPort": "443",
+ "ProxyIP": "",
+ "ProxyPort": "",
  "Info": "Ssl"
 },
 {

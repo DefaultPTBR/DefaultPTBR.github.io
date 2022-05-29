@@ -1,7 +1,7 @@
 {
   "Version": "1.0.3",
   "ReleaseNotes": "",
-  "UrlUpdate": "https://DefaultPTBR.github.io/UrlUpdate",
+  "UrlUpdate": "https://DefaultPTBR.github.io/config.json",
   "Sms": "https://DefaultPTBR.github.io/UrlSms",
   "EmailFeedback": "fast4g1@gmail.com",
   "UrlContato": "https://wa.me/message/TBLR6OUAAXH7H1",
@@ -23,64 +23,54 @@
   ],
   "Networks": [
     {
-      "Name": "VIVO",
-      "FLAG": "vivo",
-      "Payload": "GET wss://mobilidade.cloud.caixa.gov.br [protocol][crlf]Host: [app_host][crlf]X-Forwarded-For: [app_host][crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]",
-      "SNI": "",
-      "TlsIP": "",
-      "ProxyIP": "104.16.56.6",
-      "ProxyPort": "80",
-      "Info": "Proxy"
-    },
-      {
-      "Name": "VIVO/TIM",
-      "FLAG": "vivo",
-      "Payload": "GET ws://mobilidade.cloud.caixa.gov.br HTTP/1.1\nHost: [app_host]\nUpgrade: ws\n\n",
-      "SNI": "mobilidade.cloud.caixa.gov.br",
-      "TlsIP": "104.16.56.6",
-      "ProxyIP": "",
-      "ProxyPort": "",
-      "Info": "Tlsws"
-    },
-     {
-      "Name": "VIVO SSL 2",
-      "FLAG": "vivo",
-      "Payload": "GET / HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
-      "SNI": "[app_host]",
-      "TlsIP": "104.18.7.80",
-      "ProxyIP": "[app_host]",
-      "ProxyPort": "443",
-      "Info": "Tlsws"
+"Name": "VIVO SSL", 
+"FLAG": "VIVO", 
+"Payload": "GET ws://gedoc.vivo.com.br HTTP/1.1\nHost: [app_host]\nUpgrade: ws\n\n", 
+"SNI": "gedoc.vivo.com.br", 
+      "TlsIP": "gedoc.vivo.com.br", 
+      "ProxyIP": "", 
+      "ProxyPort": "", 
+      "Info": "Tlsws"  
     },
     {
-      "Name": "VIVO SSL 3",
-      "FLAG": "vivo",
-      "Payload": "GET / HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
-      "SNI": "",
-      "TlsIP": "",
-      "ProxyIP": "104.16.57.6",
-      "ProxyPort": "80",
-      "Info": "Proxy"
- },
-     {
-      "Name": "VIVO SSL 4",
-      "FLAG": "vivo",
-      "Payload": "GET wss://gedoc.vivo.com.br HTTP/1.1[crlf]Host: br67.crispim.live[crlf]Connection: Keep-alive[crlf]Upgrade: ws[crlf][crlf]",
-      "SNI": "gedoc.vivo.com.br",
-      "TlsIP": "",
-      "ProxyIP": "104.16.57.6",
-      "ProxyPort": "80",
-      "Info": "Proxy"
- },
+    "Name": "VIVO SSL 2",
+    "FLAG": "vivo",
+    "Payload": "GET / HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+    "SNI": "[app_host]",
+    "TlsIP": "104.18.7.80",
+    "ProxyIP": "[app_host]",
+    "ProxyPort": "443",
+    "Info": "Tlsws"
+    },
     {
-      "Name": "TIM 01",
-      "FLAG": "tim",
-      "Payload": "GET wss://mobilidade.cloud.caixa.gov.br [protocol][crlf]Host: [app_host][crlf]X-Forwarded-For: [app_host][crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]",
-      "SNI": "",
-      "TlsIP": "",
-      "ProxyIP": "104.16.56.6",
-      "ProxyPort": "80",
-      "Info": "Proxy"
+    "Name": "VIVO SSL 3",
+    "FLAG": "vivo",
+    "Payload": "GET / HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf][crlf]",
+    "SNI": "",
+    "TlsIP": "",
+    "ProxyIP": "104.16.57.6",
+    "ProxyPort": "80",
+    "Info": "Proxy"
+    },
+    {
+    "Name": "VIVO/TIM 1",
+    "FLAG": "vivo",
+    "Payload": "GET ws://mobilidade.cloud.caixa.gov.br HTTP/1.1\nHost: [app_host]\nUpgrade: ws\n\n",
+    "SNI": "mobilidade.cloud.caixa.gov.br",
+    "TlsIP": "104.16.56.6",
+    "ProxyIP": "",
+    "ProxyPort": "",
+    "Info": "Tlsws"
+    },
+    {
+    "Name": "TIM 01",
+    "FLAG": "tim",
+    "Payload": "GET wss://mobilidade.cloud.caixa.gov.br [protocol][crlf]Host: [app_host][crlf]X-Forwarded-For: [app_host][crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]",
+    "SNI": "",
+    "TlsIP": "",
+    "ProxyIP": "104.16.56.6",
+    "ProxyPort": "80",
+    "Info": "Proxy"
     },
     {
    "Name": "TIM 2",
@@ -100,8 +90,8 @@
    "TlsIP": "104.16.19.94",
    "ProxyIP": "",
    "ProxyPort": "443",
-   "Info":
-    },
+   "Info": "Tlsws"
+  },
     {
    "Name": "TIM 4",
    "FLAG": "tim",
@@ -112,8 +102,8 @@
    "ProxyPort": "443",
    "Info": "Tlsws"
   }, 
-     {
-    "Name": "Claro 3",
+  {
+    "Name": "Claro SSL 1",
    "FLAG": "claro",
    "Payload": "GET sni://content.akross.com.br HTTP\/1.3[crlf]Host  [app_host][crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf][crlf]",
    "SNI": "content.akross.com.br",
@@ -121,7 +111,47 @@
    "ProxyIP": "",
    "ProxyPort": "443",
    "Info": "Tlsws"
-  }, 
+  },
+  {
+    "Name": "Claro SSL 2",
+   "FLAG": "claro",
+   "Payload": "GET sni://boom4u.com.br HTTP\/1.3[crlf]Host [app_host][crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf][crlf]",
+   "SNI": "boom4u.com.br",
+   "TlsIP": "",
+   "ProxyIP": "104.16.18.94",
+   "ProxyPort": "443",
+   "Info": "SSL"
+  },
+  {
+    "Name": "CLARO SSL 3",
+    "FLAG": "claro",
+    "Payload": "GET wss://atendimento.descomplica.com.br/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Connection: Keep-Alive[crlf][crlf]",
+    "SNI": "atendimento.descomplica.com.br",
+    "TlsIP": "no.descomplica.com.br",
+    "ProxyIP": "",
+    "ProxyPort": "",
+    "Info": "Tlsws"
+  },
+  {
+   "Name": "CLARO SSL 4",
+   "FLAG": "claro",
+   "Payload": "GET wss://atendimento.descomplica.com.br HTTP/1.1[crlf]Host: [app_host][crlf]Connection: upgrade[crlf]Upgrade: websocket [crlf][crlf]",
+   "SNI": "atendimento.descomplica.com.br",
+   "TlsIP": "714341g41.secure0121.hubspot.net",
+   "ProxyIP": "",
+   "ProxyPort": "",
+   "Info": "Tlsws"
+ },
+ {
+   "Name": "CLARO SSL 5",
+   "FLAG": "claro",
+   "Payload": "GET wss://atendimento.descomplica.com.br HTTP/1.1[crlf]Host: [app_host][crlf]Connection: upgrade[crlf]Upgrade: websocket [crlf][crlf]",
+   "SNI": "atendimento.descomplica.com.br",
+   "TlsIP": "199.60.103.228",
+   "ProxyIP": "",
+   "ProxyPort": "",
+   "Info": "Tlsws"
+ },
     {
       "Name": "OI",
       "FLAG": "oi",
@@ -133,7 +163,7 @@
       "Info": "Tlsws"
     },
   {
-      "Name": "OI 2L",
+      "Name": "OI 2",
       "FLAG": "oi",
       "Payload": "GET ws://www.hbogo.com.br HTTP/1.1\nHost: [app_host]\nUpgrade: ws\n\n",
       "SNI": "www.hbogo.com.br",

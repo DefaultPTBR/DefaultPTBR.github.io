@@ -145,7 +145,7 @@
   {
    "Name": "Claro teste",
    "FLAG": "claro",
-   "Payload": "GET wss://boom4u.com.br/ HTTP/1.1[crlf]Host: br27.fast4g.xyz[host_port][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf][crlf]",
+   "Payload": "GET wss://boom4u.com.br/ HTTP/1.1[crlf]Host: br28.fast4g.xyz[host_port][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf][crlf]",
    "SNI": "boom4u.com.br",
    "TlsIP": "",
    "ProxyIP": "",
